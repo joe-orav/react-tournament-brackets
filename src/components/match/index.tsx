@@ -47,18 +47,18 @@ function Match({
           onMouseEnter={() => onMouseEnter(topParty.id)}
           onMouseLeave={onMouseLeave}
           won={topWon}
-          hovered={topHovered}
+          $hovered={topHovered}
           onClick={() => onPartyClick?.(topParty, topWon)}
         >
           <Team>{topParty?.name}</Team>
           <Score won={topWon}>{topParty?.resultText}</Score>
         </Side>
-        <Line highlighted={topHovered || bottomHovered} />
+        <Line $highlighted={topHovered || bottomHovered} />
         <Side
           onMouseEnter={() => onMouseEnter(bottomParty.id)}
           onMouseLeave={onMouseLeave}
           won={bottomWon}
-          hovered={bottomHovered}
+          $hovered={bottomHovered}
           onClick={() => onPartyClick?.(bottomParty, bottomWon)}
         >
           <Team>{bottomParty?.name}</Team>
