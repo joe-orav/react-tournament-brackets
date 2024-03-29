@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "webpack --config scripts/webpack.config.js",
+    "prepare": "webpack --config scripts/webpack.config.js",
     "dev": "start-storybook -p 4442",
     "start": "start-storybook -p $PORT -h 0.0.0.0",
     "build-storybook": "build-storybook -o devapp-build",
