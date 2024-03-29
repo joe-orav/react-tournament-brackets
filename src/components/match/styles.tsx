@@ -61,12 +61,10 @@ export const Side = styled.div<SideProps>`
   :first-of-type {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    border-top-width: 2px;
   }
   :last-of-type {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    border-bottom-width: 2px;
   }
   border-right: 4px solid ${({ theme }) => theme.border.color};
   border-left: 4px solid ${({ theme }) => theme.border.color};
