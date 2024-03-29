@@ -5,7 +5,6 @@ import 'minireset.css/minireset.min.css';
 addDecorator(storyFn => storyFn());
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
     default: 'primary',
     values: [
